@@ -1,0 +1,10 @@
+$HTTP["host"] == "chat.64bits.co" {
+        url.rewrite-if-not-file = (
+                "^/chat(1|2)/(.*)-(.*)$" => "/chat.php?session=$2&client=$1&name=$3",
+                "^/chat_join/(.*)$" => "/chat_join.php?session=$1",
+                "^/chat_term(1|2)/(.*)$" => "/chat_term.php?session=$2&type=$1",
+                "^/chat_action/(.*)$" => "/chat_action.php",
+                "^/chat_expire$" => "/chat_expire.php",
+                "^/(.*)$" => "/index.php?session=$1"
+        )
+}
