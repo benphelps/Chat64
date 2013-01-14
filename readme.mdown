@@ -1,7 +1,6 @@
-64bits.co Live Chat
-===================
+Something I hacked up real quick to try polling http request.
 
-I supply the required rewrite rules for Lighttpd, if you're using Apache or anything else, you will need to write your own rewrite rules.
+I've supplied the required rewrite rules for Lighttpd, if you're using Apache or anything else, you will need to write your own rewrite rules.
 
 
 Install Instructions 
